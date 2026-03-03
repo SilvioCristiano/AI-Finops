@@ -88,7 +88,7 @@ A função espera as seguintes variáveis de configuração no OCI Functions:
 ```bash
 fn -v deploy --app <nome-da-sua-app>
 function oci-load-file-into-adw-python oci-load-file-into-adw-python ords-token-url "https://<>.sa-saopaulo-1.oraclecloudapps.com/ords/admin/oauth/token"
-function oci-load-file-into-adw-python oci-load-file-into-adw-python ords-api-url "https://<>.sa-saopaulo-1.oraclecloudapps.com/ords/admin/insert_costanalisys/
+function oci-load-file-into-adw-python oci-load-file-into-adw-python ords-api-url "https://<>.sa-saopaulo-1.oraclecloudapps.com/ords/admin/insert_costanalisys/"
 function oci-load-file-into-adw-python oci-load-file-into-adw-python ords-client-secret 'QbB9111D-4g..'
 function oci-load-file-into-adw-python oci-load-file-into-adw-python ords-client-id '15sbCOZM111w..'
 function oci-load-file-into-adw-python oci-load-file-into-adw-python input-bucket "input-bucket"
