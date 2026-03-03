@@ -60,6 +60,13 @@ Abaixo, a representação visual do fluxo de dados:
 * **Políticas de IAM** para permitir que a função gerencie objetos nos buckets.
 * **API ORDS** configurada com OAuth2 Client Credentials.
 
+## Sua política deve ser algo como isto:
+```bash
+Allow dynamic-group <dynamic-group-name> to manage objects in compartment <compartment-name> where target.bucket.name='input-bucket'
+Allow dynamic-group <dynamic-group-name> to manage objects in compartment <compartment-name> where target.bucket.name='processed-bucket'
+Allow service objectstorage-<region_identifier> to manage object-family in tenancy 
+e.g., Allow service objectstorage-ap-sydney-1 to manage object-family in tenancy
+```
 ---
 
 ## ⚙️ Configuração (App Context)
